@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'Storage-pod'
+  s.name             = 'CocoaStorageKit'
   s.version          = '0.1.0'
   s.summary      = 'The most swift framework for your apps.'
 
