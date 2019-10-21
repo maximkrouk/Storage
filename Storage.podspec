@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
   s.swift_version = '5.1'
   s.source_files = 'Sources/**/**/**/*'
   s.frameworks = 'UIKit', 'Foundation', 'Security'
+
+  s.dependency 'Convenience'
 end
