@@ -18,7 +18,7 @@ fileprivate extension Keychain.Manager.Query {
     
     /// Adds specified access group attribute to the query.
     mutating func addAccessGroup(_ accessGroup: String) {
-        self[Storage.Keychain.Manager.Constants.Key.accessGroup.value] = accessGroup
+        self[Keychain.Manager.Constants.Key.accessGroup.value] = accessGroup
     }
     
     /// Adds specified synchronizability group attribute to the query.
@@ -26,7 +26,7 @@ fileprivate extension Keychain.Manager.Query {
     /// Adds kSecAttrSynchronizableAny if passed value was nil.
     /// - Parameter value: Pass true if you save an item, false if you read, nil if you delete.
     mutating func addSynchronizability(value: Bool? = nil) {
-        self[Storage.Keychain.Manager.Constants.Key.synchronizable.value] = value ?? kSecAttrSynchronizableAny
+        self[Keychain.Manager.Constants.Key.synchronizable.value] = value ?? kSecAttrSynchronizableAny
     }
     
     /// Returns self as CFDictionary.

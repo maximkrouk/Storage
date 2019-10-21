@@ -26,7 +26,7 @@ public extension Keychain.Manager {
         public var result: Convenience.Result<Void> {
             isSuccess ?
                 .success(()) :
-                .failure(Storage.Keychain.Manager.Error(code: code))
+                .failure(Keychain.Manager.Error(code: code))
         }
     }
     
